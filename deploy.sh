@@ -1,0 +1,1 @@
+docker run -it -v ~/Proyectos/hackathon/rtmp-server/config/app.conf:/etc/nginx/nginx.conf -v ~/Proyectos/hackathon/rtmp-server/sites-enabled:/etc/nginx/sites-enabled -v ~/Proyectos/hackathon/rtmp-server/log:/var/log/syslog -p 8001:80 -p 1935:1935 --name rtmp_server tiangolo/nginx-rtmp
